@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="Lokal KI Studio - Lokale KI fuer Kanzleien und KMU. Strukturell sicher nach paragraph 203 StGB. Chat, Wissensspeicher, 7 Exportformate. Einmalzahlung ab 249 Euro - kein Cloud-Abo." />
+  <title>Lokal KI Studio - Ihr eigenes ChatGPT - lokal &amp; sicher.</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="mobileMenu">
+    <button class="nav-overlay-close" id="mobileClose">&#x2715;</button>
+    <nav class="nav-overlay-links">
+      <a href="#home"     class="nav-overlay-link">Home</a>
+      <a href="#why"      class="nav-overlay-link">Warum lokal</a>
+      <a href="#features" class="nav-overlay-link">Funktionen</a>
+      <a href="#branchen" class="nav-overlay-link">Branchen</a>
+      <a href="#kanzlei" class="nav-overlay-link">Kanzlei &amp; §203</a>
+      <a href="#system"   class="nav-overlay-link">System</a>
+      <a href="#pricing"  class="nav-overlay-link">Preise</a>
+      <a href="#workflow" class="nav-overlay-link">Ablauf</a>
+      <a href="#contact"  class="nav-overlay-cta">Demo anfragen</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="layout-row header-inner">
+      <div class="brand">
+        <div class="brand-mark">KI</div>
+        <div class="brand-text">
+          <div class="brand-line1">Lokal KI Studio</div>
+          <div class="brand-line2">Lokal. Sicher. DSGVO.</div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#why"      class="nav-link">Warum lokal</a>
+        <a href="#features" class="nav-link">Funktionen</a>
+        <a href="#branchen" class="nav-link">Branchen</a>
+        <a href="#kanzlei" class="nav-link">Kanzlei &amp; §203</a>
+        <a href="#system"   class="nav-link">System</a>
+        <a href="#pricing"  class="nav-link">Preise</a>
+        <a href="#workflow" class="nav-link">Ablauf</a>
+        <a href="#contact"  class="btn btn-ghost">Demo anfragen</a>
+      </nav>
+      <button class="burger" id="burgerBtn" aria-label="Navigation oeffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="section hero" id="home">
+      <div class="layout-col hero-inner">
+        <div class="hero-copy">
+          <h1 class="headline-xl gradient-text">
+            Lokale KI.<br />
+            Kein Cloud-Risiko.<br />
+            &sect;203 sicher.
+          </h1>
+          <p class="lead">
+            Lokal KI Studio laeuft komplett auf Ihrem Rechner.
+            Kein Cloud-Anbieter, keine Datenweitergabe - strukturell sicher
+            nach &sect;203 StGB. Chat, Wissensspeicher, 7 Export-Formate.
+            Einmal kaufen, fuer immer nutzen.
+          </p>
+          <div class="hero-highlights">
+            <div class="pill">&sect;203 StGB sicher</div>
+            <div class="pill">100 % lokal</div>
+            <div class="pill">Kein Abo</div>
+            <div class="pill">Einmalzahlung</div>
+            <div class="pill">Offline-faehig</div>
+            <div class="pill">Alle Branchen</div>
+          </div>
+          <div class="hero-cta-row">
+            <a href="#contact" class="btn btn-primary">Kostenlose Demo anfragen</a>
+            <a href="#pricing" class="btn btn-outline">Preise ansehen</a>
+          </div>
+          <div class="trust-note">
+            <span class="dot dot-green"></span>
+            Strukturell &sect;203-sicher - kein Dritter hat Zugriff. 7 Tage kostenlos testen.
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-card-top">
+              <div class="status">
+                <span class="status-dot"></span> Lokal KI Studio
+              </div>
+              <div class="status-hint">Aktiv &amp; lokal</div>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric-box">
+                <div class="metric-label">&sect;203 StGB Risiko</div>
+                <div class="metric-value green">0,0 %</div>
+                <div class="metric-desc">Strukturell ausgeschlossen</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Monatliche Zusatzkosten</div>
+                <div class="metric-value blue">0 Euro</div>
+                <div class="metric-desc">Nach Einmalkauf</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Setup-Aufwand</div>
+                <div class="metric-value neon">1 Klick</div>
+                <div class="metric-desc">START.bat - Windows</div>
+              </div>
+            </div>
+            <div class="hero-footnote">
+              Kein Byte verlaesst Ihren Rechner. Kein Cloud-Anbieter, kein AVV, kein &sect;203-Risiko. Chat, Wissensspeicher und 7 Export-Formate - fertig in 10 Minuten.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section why" id="why">
+      <div class="layout-col tight">
+        <div class="section-head">
+          <h2 class="headline-l">Warum lokal - besonders fuer Kanzleien</h2>
+          <p class="section-desc">
+            Cloud-KI-Tools haben ein Datenschutzproblem das Anwaelte, Steuerberater und Aerzte direkt betrifft:
+            &sect;203 StGB. Lokal KI Studio ist das einzige System bei dem dieses Risiko strukturell ausgeschlossen ist.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card feature-card">
+            <div class="icon-circle"><span>&#x2696;</span></div>
+            <h3 class="feature-title">&sect;203 StGB strukturell sicher</h3>
+            <p class="feature-text">
+              Der DAV stellt klar: bereits die blosse Moeglichkeit des Zugriffs durch Provider-Mitarbeiter
+              gilt als strafbare Offenbarung. Lokal KI Studio hat keinen Provider. Kein Byte verlaesst den Rechner.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="icon-circle"><span>&#x1F4B0;</span></div>
+            <h3 class="feature-title">499 Euro statt 7.200 Euro / Jahr</h3>
+            <p class="feature-text">
+              Libra Professional kostet 200 Euro/Nutzer/Monat. ChatGPT Business 29 Euro/Nutzer/Monat.
+              Lokal KI Studio Business: 499 Euro einmalig fuer bis zu 5 Nutzer - kein Abo, keine Laufzeit.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="icon-circle"><span>&#x1F3AF;</span></div>
+            <h3 class="feature-title">Firmenspezifisch anpassbar</h3>
+            <p class="feature-text">
+              Eigene Preislisten, Vertraege und Handbuecher hochladen - die KI kennt Ihr Unternehmen.
+              Branchenpakete fuer Kanzlei, Handwerk, Arztpraxis, Immobilien, Marketing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- KANZLEI §203 -->
+    <section class="section why" id="kanzlei">
+      <div class="layout-col tight">
+        <div class="section-head">
+          <h2 class="headline-l">Das &sect;203 StGB Problem - und die einzige echte Loesung</h2>
+          <p class="section-desc">
+            Der DAV, die BRAK und der BStBK (Feb. 2026) sind einig: Fuer Anwaelte, Steuerberater und Aerzte
+            ist Cloud-KI ein Berufsrechtsrisiko. Es gibt nur eine Loesung die das strukturell ausschliesst.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x26A0;</div>
+              <div class="solution-title">Das Problem mit Cloud-KI</div>
+            </div>
+            <p class="solution-text">
+              Bereits die blosse Moeglichkeit des Zugriffs durch Mitarbeiter eines Cloud-Providers
+              gilt als strafbare Offenbarung nach &sect;203 StGB. Jedes Tool das Daten in die Cloud sendet
+              - auch mit AVV und ISO-Zertifikat - traegt dieses Risiko.
+            </p>
+            <ul class="bullet-list">
+              <li>Libra: EU-Cloud, ISO 27001, AVV - aber Cloud</li>
+              <li>ChatGPT Business: AVV vorhanden - aber US-Server</li>
+              <li>RA-MICRO JURA KI: anonymisiert lokal, sendet dann zu OpenAI</li>
+              <li>MS Copilot: EU-Rechenzentrum - aber Microsoft hat Zugriff</li>
+            </ul>
+          </div>
+
+          <div class="solution-block card" style="border-color: rgba(0,255,135,0.4);">
+            <div class="solution-head">
+              <div class="solution-icon">&#x2714;</div>
+              <div class="solution-title">Die Loesung: strukturell, nicht vertraglich</div>
+            </div>
+            <p class="solution-text">
+              Lokal KI Studio hat keinen Cloud-Provider. Kein Byte verlaesst den Rechner.
+              Kein AVV noetig, keine gesonderte Verschwiegenheitsverpflichtung nach &sect;43e BRAO,
+              kein Datenschutzbeauftragter fuer die Tool-Freigabe erforderlich.
+            </p>
+            <ul class="bullet-list">
+              <li>Kein Dritter - kein &sect;203-Risiko</li>
+              <li>Kein AVV nach DSGVO Art. 28 erforderlich</li>
+              <li>Offline-Betrieb - auch ohne Internet</li>
+              <li>START.bat - fertig in 10 Minuten</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="workflow-bottom-card card">
+          <div class="wbc-left">
+            <div class="wbc-eyebrow">Kanzlei-Preisvergleich: 3 Anwaelte, 3 Jahre</div>
+            <div class="wbc-headline">
+              Libra: 21.600 Euro &middot; ChatGPT Business: 3.132 Euro &middot;
+              <span class="txt-neon">Lokal KI Studio: 499 Euro</span>
+            </div>
+          </div>
+          <div class="wbc-right">
+            <ul class="bullet-list tight">
+              <li>Libra ~200 Euro/Nutzer/Mo</li>
+              <li>ChatGPT Business 29 Euro/Nutzer/Mo</li>
+              <li>Prime Legal AI 100 Euro/Mo (100 Anfragen)</li>
+              <li>Lokal KI Studio: einmalig</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section solutions" id="features">
+      <div class="layout-col">
+        <div class="section-head">
+          <h2 class="headline-l">Was Lokal KI Studio fuer Sie erledigt</h2>
+          <p class="section-desc">
+            Sagen Sie der KI was Sie brauchen - in normaler Sprache.
+            Sie antwortet, sucht, erstellt und exportiert.
+          </p>
+        </div>
+        <div class="solutions-grid">
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x1F4AC;</div>
+              <div class="solution-title">Chat-Assistent</div>
+            </div>
+            <p class="solution-text">
+              Fragen stellen, Texte formulieren, E-Mails verbessern, Ideen ausarbeiten.
+              Die KI antwortet sofort auf Deutsch - ohne Internet, ohne Cloud.
+            </p>
+            <ul class="bullet-list">
+              <li>Natuerliche Sprache - kein Prompt-Wissen noetig</li>
+              <li>Laeuft lokal mit qwen2.5:7b via Ollama</li>
+              <li>Antworten in Sekunden (mit GPU)</li>
+            </ul>
+          </div>
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x1F50D;</div>
+              <div class="solution-title">Wissensspeicher (RAG)</div>
+            </div>
+            <p class="solution-text">
+              Eigene Dokumente hochladen - die KI durchsucht PDF, Word, Excel und
+              beantwortet Fragen direkt aus Ihren Dateien. Alles lokal.
+            </p>
+            <ul class="bullet-list">
+              <li>PDF, DOCX, XLSX, TXT, CSV hochladen</li>
+              <li>Semantische Suche lokal (Weaviate)</li>
+              <li>Keine Datenweitergabe an Dritte</li>
+            </ul>
+          </div>
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x1F4C4;</div>
+              <div class="solution-title">Dokumente in 7 Formaten</div>
+            </div>
+            <p class="solution-text">
+              Rechnungen, Angebote, Anschreiben, Praesentationen, Tabellen - direkt aus dem Chat
+              als fertige Datei. Kein Nachbearbeiten, kein Copy-Paste.
+            </p>
+            <ul class="bullet-list">
+              <li>PDF - DOCX - XLSX - PPTX</li>
+              <li>CSV - HTML - Markdown</li>
+              <li>Sofort verwendbar und druckbereit</li>
+            </ul>
+          </div>
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x2696;</div>
+              <div class="solution-title">Branchenpaket Kanzlei</div>
+            </div>
+            <p class="solution-text">
+              Vorkonfigurierte Prompts und Vorlagen fuer den Kanzleialltag - direkt einsatzbereit
+              ohne Prompt-Engineering-Kenntnisse.
+            </p>
+            <ul class="bullet-list">
+              <li>Schriftsatz, Klage, Berufung, Mandantenbrief</li>
+              <li>Honorarrechnung nach RVG-Schema</li>
+              <li>&sect;203-Leitfaden als Wissensdatenbank-Vorlage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SYSTEMANFORDERUNGEN -->
+    <section class="section workflow" id="system">
+      <div class="layout-col tight">
+        <div class="section-head">
+          <h2 class="headline-l">Systemanforderungen Windows</h2>
+          <p class="section-desc">
+            Lokal KI Studio laeuft auf handelsueblicherr Windows-Hardware.
+            Je mehr Leistung, desto schneller die KI-Antworten.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="tl-step">
+            <div class="tl-marker" style="background:rgba(255,100,100,.1);border-color:rgba(255,100,100,.4);color:#ff8080;">Min</div>
+            <div class="tl-title">Minimum</div>
+            <div class="tl-text">
+              Windows 10 / 11 (64-Bit)<br/>
+              8 GB RAM<br/>
+              CPU: Intel i5 / AMD Ryzen 5 (4 Kerne)<br/>
+              50 GB freier Speicher (SSD empfohlen)<br/>
+              Internet: nur bei Erstinstallation<br/>
+              <small style="color:var(--txt-muted);">Antwortzeit ca. 30-60 Sek. &middot; CPU-only Betrieb</small>
+            </div>
+          </div>
+
+          <div class="tl-step" style="border-color:rgba(0,255,135,0.35);">
+            <div class="tl-marker">OK</div>
+            <div class="tl-title">Empfohlen</div>
+            <div class="tl-text">
+              Windows 10 / 11 (64-Bit)<br/>
+              16 GB RAM<br/>
+              CPU: Intel i7 / AMD Ryzen 7<br/>
+              NVIDIA GPU: RTX 3060 / 4060 (8 GB VRAM)<br/>
+              100 GB freier SSD-Speicher<br/>
+              <small style="color:var(--txt-muted);">Antwortzeit ca. 3-5 Sek. &middot; GPU-beschleunigt</small>
+            </div>
+          </div>
+
+          <div class="tl-step" style="border-color:rgba(0,255,135,0.55);box-shadow:0 0 30px rgba(0,255,135,0.07),0 20px 80px rgba(0,0,0,.7);">
+            <div class="tl-marker" style="background:rgba(0,255,135,.12);border-color:rgba(0,255,135,.6);">Top</div>
+            <div class="tl-title" style="color:var(--neon-500);">Optimal</div>
+            <div class="tl-text">
+              Windows 11 (64-Bit)<br/>
+              32 GB RAM oder mehr<br/>
+              CPU: Intel i9 / AMD Ryzen 9<br/>
+              NVIDIA GPU: RTX 4070 / 4080 / 4090 (12-24 GB VRAM)<br/>
+              200 GB freier NVMe-Speicher<br/>
+              <small style="color:var(--txt-muted);">Antwortzeit ca. 1-2 Sek. &middot; Grosse Modelle moeglich</small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="workflow-bottom-card card">
+          <div class="wbc-left">
+            <div class="wbc-eyebrow">Pflicht-Software (kostenlos)</div>
+            <div class="wbc-headline">
+              Docker Desktop &middot; Python 3.8+ &middot; <span class="txt-neon">NVIDIA-Treiber (bei GPU)</span>
+            </div>
+          </div>
+          <div class="wbc-right">
+            <ul class="bullet-list tight">
+              <li>WSL2 (automatisch via Docker)</li>
+              <li>8+ GB freier RAM im Betrieb</li>
+              <li>SSD stark empfohlen</li>
+              <li>Kein Internet im Betrieb noetig</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BRANCHEN -->
+    <section class="section solutions" id="branchen">
+      <div class="layout-col">
+        <div class="section-head">
+          <h2 class="headline-l">Fuer jede Branche - firmenspezifisch anpassbar</h2>
+          <p class="section-desc">
+            Lokal KI Studio laeuft in jeder Branche. Branchenpakete liefern vorkonfigurierte
+            Prompts und Vorlagen ab Tag 1. Dazu: Ihre eigene Wissensdatenbank macht die KI
+            zu Ihrem persoenlichen Unternehmens-Assistenten.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+
+          <div class="solution-block card" style="border-color:rgba(0,255,135,0.3);">
+            <div class="solution-head">
+              <div class="solution-icon">&#x2696;</div>
+              <div class="solution-title">Kanzlei &amp; Steuerberatung</div>
+            </div>
+            <p class="solution-text">
+              Das starkste Branchenpaket. Schriftsaetze, Mandantenbriefe, Honorarrechnungen,
+              Aktenanalyse via RAG. Und: strukturell &sect;203-sicher - kein Cloud-Risiko.
+            </p>
+            <ul class="bullet-list">
+              <li>Schriftsatz, Klage, Berufung als DOCX</li>
+              <li>Honorarrechnung nach RVG als PDF</li>
+              <li>&sect;203-Leitfaden als Wissensdatenbankvorlage</li>
+            </ul>
+          </div>
+
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x1F528;</div>
+              <div class="solution-title">Handwerk &amp; Baugewerbe</div>
+            </div>
+            <p class="solution-text">
+              Angebote, Rechnungen, Materiallisten, Bautagebuecher - alles aus dem Chat.
+              Fuer die ca. 1 Million Handwerksbetriebe in Deutschland.
+            </p>
+            <ul class="bullet-list">
+              <li>Angebot und Rechnung nach VOB als PDF</li>
+              <li>Materialliste als XLSX</li>
+              <li>Maengelruege, Auftragsbestaetigung als DOCX</li>
+            </ul>
+          </div>
+
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x2695;</div>
+              <div class="solution-title">Arztpraxis &amp; Gesundheit</div>
+            </div>
+            <p class="solution-text">
+              Arztbriefe, Befundberichte, Patienteninformationen - lokal auf Ihrem Server,
+              DSGVO-konform, aerztliche Schweigepflicht strukturell gewahrt.
+            </p>
+            <ul class="bullet-list">
+              <li>Arztbrief und Befundbericht als DOCX</li>
+              <li>Patienteninformation und Aufklaerung als PDF</li>
+              <li>GOA-Abrechnung als XLSX</li>
+            </ul>
+          </div>
+
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x1F3E0;</div>
+              <div class="solution-title">Immobilien &amp; Hausverwaltung</div>
+            </div>
+            <p class="solution-text">
+              Exposees, Mietvertraege, Nebenkostenabrechnungen, Uebergabeprotokolle -
+              der gesamte Dokumenten-Alltag der Immobilienbranche aus einem Chat.
+            </p>
+            <ul class="bullet-list">
+              <li>Exposee als PDF, HTML-Vorlage</li>
+              <li>Nebenkostenabrechnung als PDF</li>
+              <li>Uebergabeprotokoll als DOCX</li>
+            </ul>
+          </div>
+
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x1F4E3;</div>
+              <div class="solution-title">Marketing &amp; Agenturen</div>
+            </div>
+            <p class="solution-text">
+              Die Branche mit dem hoechsten KI-Einsatz (59%). Content, Briefings,
+              Praesentation, Pressemitteilungen - lokal, ohne Datenweitergabe an Tools.
+            </p>
+            <ul class="bullet-list">
+              <li>Social Media Posts, Blogartikel als MD/HTML</li>
+              <li>Kampagnen-Briefing als PDF</li>
+              <li>Redaktionsplan als XLSX, Pitch als PPTX</li>
+            </ul>
+          </div>
+
+          <div class="solution-block card">
+            <div class="solution-head">
+              <div class="solution-icon">&#x2699;</div>
+              <div class="solution-title">Individuell - Ihre Branche</div>
+            </div>
+            <p class="solution-text">
+              Kein passendes Branchenpaket dabei? Wir entwickeln individuell fuer Ihre Branche
+              und Firmenstruktur. Vom Kfz-Betrieb bis zum Bildungstraeger - jede Branche ist moeglich.
+            </p>
+            <ul class="bullet-list">
+              <li>Individuelle Prompt-Templates</li>
+              <li>Firmenspezifische Vorlagen und Workflows</li>
+              <li>Branchenpaket-Anpassung ab 299 Euro</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Firmenspezifisch Box -->
+        <div class="workflow-bottom-card card" style="margin-top:1rem;">
+          <div class="wbc-left">
+            <div class="wbc-eyebrow">Ihre firmenspezifische KI</div>
+            <div class="wbc-headline">
+              Eigene Preislisten, Vertraege, Handbuecher hochladen -
+              <span class="txt-neon">die KI kennt Ihr Unternehmen.</span>
+            </div>
+          </div>
+          <div class="wbc-right">
+            <ul class="bullet-list tight">
+              <li>Preisliste hochladen - KI rechnet mit Ihren Preisen</li>
+              <li>Eigene Vertragsvorlagen im Wissensspeicher</li>
+              <li>Produktkatalog durchsuchbar per Chat</li>
+              <li>Betriebshandbuch immer griffbereit</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section why" id="pricing">
+      <div class="layout-col tight">
+        <div class="section-head">
+          <h2 class="headline-l">Preise - einmal kaufen, fuer immer nutzen.</h2>
+          <p class="section-desc">
+            Einmal kaufen, fuer immer nutzen - fuer jede Branche. Branchenpakete fuer Kanzlei und Handwerk
+            inklusive. Alle weiteren Branchen als Add-on oder individuell anpassbar.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card feature-card">
+            <div class="icon-circle"><span>&#x1F680;</span></div>
+            <h3 class="feature-title">Starter - 249 Euro</h3>
+            <p class="feature-text">
+              Fuer Einzelpersonen und Freelancer. 1 Nutzerkonto, alle Core-Features
+              (Chat, RAG, 7 Export-Formate), One-Click-Installer, 3 Monate E-Mail-Support.
+            </p>
+          </div>
+          <div class="card feature-card" style="border-color:rgba(0,255,135,0.45);box-shadow:0 0 40px rgba(0,255,135,0.08),0 20px 80px rgba(0,0,0,.7);">
+            <div class="icon-circle"><span>&#x2B50;</span></div>
+            <h3 class="feature-title" style="color:var(--neon-500);">Business - 499 Euro <small style="font-size:.72rem;color:var(--txt-muted);font-weight:400;">Empfohlen</small></h3>
+            <p class="feature-text">
+              Fuer KMU bis 5 Nutzer. Inkl. Branchenpaket, 6 Monate Telefon-Support
+              und einer Remote-Setup-Session (60 Min.). Sweet Spot fuer Bueros und Kanzleien.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="icon-circle"><span>&#x1F3E2;</span></div>
+            <h3 class="feature-title">Pro - 899 Euro</h3>
+            <p class="feature-text">
+              Fuer wachsende Unternehmen bis 15 Nutzer. Inkl. Setup vor Ort,
+              Schulung (2h), 12 Monate Support und individuellem Branchenpaket.
+            </p>
+          </div>
+        </div>
+        <div class="workflow-bottom-card card">
+          <div class="wbc-left">
+            <div class="wbc-eyebrow">Support-Abos &amp; Add-ons (optional)</div>
+            <div class="wbc-headline">
+              Basic 19 Euro/Mo &middot; Plus 39 Euro/Mo &middot; <span class="txt-neon">Pro 79 Euro/Mo</span><br/>
+              <small style="font-size:.8rem;color:var(--txt-dim);font-weight:400;">
+                Add-ons: Bildgenerierung 149 Euro &middot; Netzwerk-Betrieb 199 Euro &middot; Setup vor Ort 149 Euro
+              </small>
+            </div>
+          </div>
+          <div class="wbc-right">
+            <ul class="bullet-list tight">
+              <li>Automatische Updates</li>
+              <li>Fernwartung &amp; Monitoring</li>
+              <li>Prioritaets-Support</li>
+              <li>Jederzeit kuendbar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="section workflow" id="workflow">
+      <div class="layout-col tight">
+        <div class="section-head">
+          <h2 class="headline-l">So laeuft es ab</h2>
+          <p class="section-desc">
+            Von der Demo bis zum &sect;203-sicheren KI-System - in der Regel innerhalb von 24 Stunden.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="tl-step">
+            <div class="tl-marker">1</div>
+            <div class="tl-title">Demo anfragen</div>
+            <div class="tl-text">
+              Kontaktformular ausfuellen oder direkt anrufen.
+              Wir melden uns innerhalb von 24h - kein Sales-Druck, kein Praesentations-Marathon.
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-marker">2</div>
+            <div class="tl-title">7-Tage-Demo erhalten</div>
+            <div class="tl-text">
+              Sie bekommen ein ZIP-Paket per E-Mail. Doppelklick auf START.bat -
+              das System installiert sich selbst in ca. 10 Minuten.
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-marker">3</div>
+            <div class="tl-title">7 Tage ausprobieren</div>
+            <div class="tl-text">
+              Echter Betrieb mit Ihren eigenen Dokumenten. Chat, Wissensspeicher,
+              Dokumente erstellen. Wir sind per E-Mail erreichbar falls Fragen aufkommen.
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-marker">4</div>
+            <div class="tl-title">Paket waehlen &amp; kaufen</div>
+            <div class="tl-text">
+              Ueberzeugt? Paket waehlen, Rechnung erhalten, einmalig bezahlen.
+              Das System laeuft sofort weiter - kein Neustart, keine Neuinstallation.
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-marker">5</div>
+            <div class="tl-title">Support &amp; Updates</div>
+            <div class="tl-text">
+              Ihr System laeuft, wir stehen dahinter. Updates, Fragen, Probleme -
+              ein Ansprechpartner, eine E-Mail, eine Telefonnummer in Deutschland.
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-marker">6</div>
+            <div class="tl-title">Optional: Setup vor Ort</div>
+            <div class="tl-text">
+              Wir kommen zu Ihnen, installieren und schulen Ihre Mitarbeiter
+              (2h, bis 5 Personen). Ab 149 Euro - auf Wunsch Teil des Pro-Pakets.
+            </div>
+          </div>
+        </div>
+        <div class="workflow-bottom-card card">
+          <div class="wbc-left">
+            <div class="wbc-eyebrow">Unser Versprechen</div>
+            <div class="wbc-headline">
+              Sie bekommen nicht nur ein Tool.<br />
+              Sie bekommen ein <span class="txt-neon">fertiges KI-System</span>.
+            </div>
+          </div>
+          <div class="wbc-right">
+            <ul class="bullet-list tight">
+              <li>Starter ab 249 Euro einmalig</li>
+              <li>Business ab 499 Euro (empfohlen)</li>
+              <li>Pro ab 899 Euro inkl. Setup</li>
+              <li>Support-Abo ab 19 Euro/Monat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="layout-col tight contact-inner">
+        <div class="contact-left">
+          <h2 class="headline-l">Demo anfragen</h2>
+          <p class="section-desc">
+            Kein Sales-Gespraech. Kein Druck. Besonders fuer Kanzleien und Berufsgeheimnisstraeger:
+            Wir erklaeren das &sect;203-Argument und schicken Ihnen die 7-Tage-Demo zu.
+          </p>
+          <div class="contact-box card">
+            <div class="contact-line">
+              <div class="cl-label">Telefon</div>
+              <div class="cl-value">
+                <a href="tel:+4915117278244" class="cl-link">+49 151 17278244</a>
+              </div>
+            </div>
+            <div class="contact-line">
+              <div class="cl-label">E-Mail</div>
+              <div class="cl-value">
+                <a href="mailto:studiom360@t-online.de" class="cl-link">studiom360@t-online.de</a>
+              </div>
+            </div>
+            <div class="contact-line">
+              <div class="cl-label">Standort</div>
+              <div class="cl-value">Wuppertal (NRW), Deutschland</div>
+            </div>
+            <div class="contact-line">
+              <div class="cl-label">Ansprechpartner</div>
+              <div class="cl-value">Kevin Maus - Lokal KI Studio</div>
+            </div>
+            <div class="contact-line">
+              <div class="cl-label">Reaktionszeit</div>
+              <div class="cl-value">Werktags innerhalb 24h</div>
+            </div>
+          </div>
+          <div class="microcopy">
+            Lokal KI Studio - Lokale KI fuer den deutschen Mittelstand - Seit 2025.
+          </div>
+        </div>
+
+        <form class="contact-form card" onsubmit="return false;">
+          <div class="cf-head">
+            <div class="cf-title">Demo anfragen</div>
+            <div class="cf-hint">Unverbindlich</div>
+          </div>
+          <label class="cf-field">
+            <span class="cf-label">Ihr Name</span>
+            <input class="cf-input" type="text" id="cfName" placeholder="Max Mustermann" />
+          </label>
+          <label class="cf-field">
+            <span class="cf-label">E-Mail</span>
+            <input class="cf-input" type="email" id="cfEmail" placeholder="max@musterfirma.de" />
+          </label>
+          <label class="cf-field">
+            <span class="cf-label">Firma / Branche</span>
+            <input class="cf-input" type="text" id="cfCompany" placeholder="Musterkanzlei GmbH - Steuerberatung" />
+          </label>
+          <label class="cf-field">
+            <span class="cf-label">Was interessiert Sie?</span>
+            <input class="cf-input" type="text" id="cfMessage" placeholder="z. B. Anwaltskanzlei 3 Anwaelte, brauche &sect;203-sichere KI fuer Schriftsaetze..." />
+          </label>
+          <button class="btn btn-primary btn-full" id="fakeSubmitBtn">Demo anfragen</button>
+          <div class="cf-footnote" id="formStatus">
+            Ihre Daten werden ausschliesslich zur Bearbeitung Ihrer Anfrage genutzt.
+            Keine Weitergabe an Dritte. DSGVO-konform.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="layout-col footer-inner">
+      <div class="footer-top">
+        <div class="brand brand-footer">
+          <div class="brand-mark">KI</div>
+          <div class="brand-text">
+            <div class="brand-line1">Lokal KI Studio</div>
+            <div class="brand-line2">Lokal. Sicher. DSGVO-konform.</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#why"      class="footer-link">Warum lokal</a>
+          <a href="#branchen" class="footer-link">Branchen</a>
+          <a href="#kanzlei"  class="footer-link">Kanzlei &amp; &sect;203</a>
+          <a href="#features" class="footer-link">Funktionen</a>
+          <a href="#system"   class="footer-link">System</a>
+          <a href="#pricing"  class="footer-link">Preise</a>
+          <a href="#workflow" class="footer-link">Ablauf</a>
+          <a href="#contact"  class="footer-link">Kontakt</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="legal">
+          (c) 2026 Lokal KI Studio - Studio M360 - Kevin Maus - Wuppertal
+        </div>
+        <div class="legal">
+          &sect;203 StGB sicher - Einmalzahlung ab 249 Euro - Kein Cloud-Abo - Made in Germany
+        </div>
+      </div>
+      <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line-dark);display:flex;gap:1.5rem;flex-wrap:wrap;">
+        <a href="datenschutz.html" class="footer-link" style="font-size:0.75rem;">Datenschutz &amp; Impressum</a>
+        <a href="agb.html" class="footer-link" style="font-size:0.75rem;">AGB &amp; Rechtliches</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
