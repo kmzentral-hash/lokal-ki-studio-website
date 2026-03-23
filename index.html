@@ -7,7 +7,7 @@
   <title>Lokal KI Studio - Ihr eigenes ChatGPT - lokal &amp; sicher.</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 
@@ -671,7 +671,7 @@
             <div class="contact-line">
               <div class="cl-label">E-Mail</div>
               <div class="cl-value">
-                <a href="mailto:studiom360@t-online.de" class="cl-link">studiom360@t-online.de</a>
+                <a href="mailto:lokal-ki-studio@t-online.de" class="cl-link">lokal-ki-studio@t-online.de</a>
               </div>
             </div>
             <div class="contact-line">
@@ -692,29 +692,37 @@
           </div>
         </div>
 
-        <form class="contact-form card" onsubmit="return false;">
+        <form class="contact-form card" id="demo-form">
+          <input type="hidden" name="access_key" value="b1e2fc18-c6be-47ec-8adf-469e4453977b" />
+          <input type="hidden" name="subject" value="Neue Demo-Anfrage - Lokal KI Studio" />
+          <input type="hidden" name="from_name" value="Lokal KI Studio Website" />
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="cf-head">
             <div class="cf-title">Demo anfragen</div>
             <div class="cf-hint">Unverbindlich</div>
           </div>
           <label class="cf-field">
             <span class="cf-label">Ihr Name</span>
-            <input class="cf-input" type="text" id="cfName" placeholder="Max Mustermann" />
+            <input class="cf-input" type="text" id="cfName" name="name" placeholder="Max Mustermann" required />
           </label>
           <label class="cf-field">
             <span class="cf-label">E-Mail</span>
-            <input class="cf-input" type="email" id="cfEmail" placeholder="max@musterfirma.de" />
+            <input class="cf-input" type="email" id="cfEmail" name="email" placeholder="max@musterfirma.de" required />
           </label>
           <label class="cf-field">
             <span class="cf-label">Firma / Branche</span>
-            <input class="cf-input" type="text" id="cfCompany" placeholder="Musterkanzlei GmbH - Steuerberatung" />
+            <input class="cf-input" type="text" id="cfCompany" name="company" placeholder="Musterkanzlei GmbH - Steuerberatung" />
           </label>
           <label class="cf-field">
             <span class="cf-label">Was interessiert Sie?</span>
-            <input class="cf-input" type="text" id="cfMessage" placeholder="z. B. Anwaltskanzlei 3 Anwaelte, brauche &sect;203-sichere KI fuer Schriftsaetze..." />
+            <input class="cf-input" type="text" id="cfMessage" name="interest" placeholder="z. B. Anwaltskanzlei 3 Anwaelte, brauche &sect;203-sichere KI fuer Schriftsaetze..." />
           </label>
-          <button class="btn btn-primary btn-full" id="fakeSubmitBtn">Demo anfragen</button>
-          <div class="cf-footnote" id="formStatus">
+          <label class="cf-field">
+            <span class="cf-label">Nachricht</span>
+            <textarea class="cf-input cf-textarea" id="cfDetails" name="message" rows="4" placeholder="Kurz Ihr Anliegen, Teamgroesse oder gewuenschter Einsatzbereich..."></textarea>
+          </label>
+          <button class="btn btn-primary btn-full" id="fakeSubmitBtn" type="submit">Demo anfragen</button>
+          <div class="cf-footnote" id="formStatus" aria-live="polite">
             Ihre Daten werden ausschliesslich zur Bearbeitung Ihrer Anfrage genutzt.
             Keine Weitergabe an Dritte. DSGVO-konform.
           </div>
@@ -760,6 +768,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>

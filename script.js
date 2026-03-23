@@ -13,42 +13,69 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// Form submit -> mailto
-const fakeBtn    = document.getElementById("fakeSubmitBtn");
+// Web3Forms submit
+const demoForm = document.getElementById("demo-form");
 const formStatus = document.getElementById("formStatus");
 
-if (fakeBtn) {
-  fakeBtn.addEventListener("click", () => {
-    const name    = (document.getElementById("cfName")    || {}).value || "";
-    const email   = (document.getElementById("cfEmail")   || {}).value || "";
-    const company = (document.getElementById("cfCompany") || {}).value || "";
-    const message = (document.getElementById("cfMessage") || {}).value || "";
+if (demoForm) {
+  demoForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = (document.getElementById("cfName") || {}).value?.trim() || "";
+    const email = (document.getElementById("cfEmail") || {}).value?.trim() || "";
 
     if (!name || !email) {
       if (formStatus) {
         formStatus.textContent = "Bitte Name und E-Mail ausfuellen.";
         formStatus.style.color = "#ff6b6b";
+        formStatus.style.textShadow = "none";
       }
       return;
     }
 
-    const subject = encodeURIComponent("Lokal KI Studio - Demo-Anfrage von " + name);
-    const body    = encodeURIComponent(
-      "Name: " + name + "\n" +
-      "E-Mail: " + email + "\n" +
-      "Firma/Branche: " + company + "\n" +
-      "Interesse: " + message + "\n\n" +
-      "---\nGesendet ueber: lokalkistudio.de"
-    );
-
-    window.location.href =
-      "mailto:studiom360@t-online.de?subject=" + subject + "&body=" + body;
-
     if (formStatus) {
-      formStatus.textContent =
-        "Danke! Ihre E-Mail-App oeffnet sich. Wir melden uns innerhalb von 24h.";
-      formStatus.style.color    = "var(--neon-500)";
-      formStatus.style.textShadow = "var(--neon-glow)";
+      formStatus.textContent = "Anfrage wird gesendet ...";
+      formStatus.style.color = "var(--text-300)";
+      formStatus.style.textShadow = "none";
+    }
+
+    const submitButton = demoForm.querySelector('button[type="submit"]');
+    if (submitButton) submitButton.disabled = true;
+
+    try {
+      const formData = new FormData(demoForm);
+      const payload = Object.fromEntries(formData.entries());
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        if (formStatus) {
+          formStatus.textContent = "Danke! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns innerhalb von 24h.";
+          formStatus.style.color = "var(--neon-500)";
+          formStatus.style.textShadow = "var(--neon-glow)";
+        }
+        demoForm.reset();
+      } else {
+        throw new Error(result.message || "Senden fehlgeschlagen.");
+      }
+    } catch (error) {
+      console.error(error);
+      if (formStatus) {
+        formStatus.textContent = "Fehler beim Senden. Bitte pruefen Sie Ihre Eingaben oder schreiben Sie direkt an lokal-ki-studio@t-online.de.";
+        formStatus.style.color = "#ff6b6b";
+        formStatus.style.textShadow = "none";
+      }
+    } finally {
+      if (submitButton) submitButton.disabled = false;
     }
   });
 }
